@@ -188,7 +188,7 @@ body {
 }
 
 .site-navigation ul li a:hover{
-    color: black;
+    color: #25ffbf;
 }
 
 @media screen and (min-width: 992px) {
@@ -257,11 +257,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.hero-content .entry-header img{
-align-items: center;
-        max-width: 25%;
-        height: auto;
-        padding: 0;
+.hero-content .entry-header img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 30%; /* Make the image responsive by setting its maximum width to 100% */
+    height: auto;
+    padding: 0;
 }
 
 .hero-content .entry-header h1 {
@@ -291,7 +292,11 @@ align-items: center;
         font-size: 30px; /* Adjusted font size for smaller screens */
     }
 }
-
+@media screen and (max-width: 768px) {
+    .hero-content .entry-header img {
+        max-width: 100%; /* Adjusted maximum width for smaller screens */
+    }
+}
 
 
 .serviceBox {
@@ -425,19 +430,52 @@ align-items: center;
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
 }
+
+.entry-btn {
+    display: flex;
+    
+}
  .entry-btn .btn {
     background: hsl(0, 0%, 100%);
-    padding: 16px 40px;
     border-radius: 2;
     margin-right: 20px;
     color: hsl(0, 0%, 17%);
     font-weight: 600;
     border: #00a9b3 solid 2px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 .entry-btn a:hover,.entry-btn .current {
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
+}
+
+
+
+/* Media Query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
+    .entry-btn {
+        flex-direction: row; /* Keep buttons side by side for small screens */
+        align-items: center;
+    }
+
+    .btn {
+        width: auto; /* Allow buttons to take natural width on small screens */
+    }
+}
+
+/* Media Query for screens between 769px and 1024px (adjust the breakpoint as needed) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .entry-btn {
+        flex-direction: column; /* Stacking vertically for medium screens */
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 100%; /* Make buttons take full width on medium screens */
+    }
 }
 /* Styles for hero-content */
 .hero-content {
@@ -532,6 +570,7 @@ align-items: center;
     width: 100%;
     max-width: 100%;
 }
+/* Common styles for all screen sizes */
 .popup-container {
     display: none;
     position: fixed;
@@ -544,21 +583,22 @@ align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-.popup-container h2{
-    font-size: 30px;
+
+.popup-container h2 {
+    font-size: 24px; /* Adjusted font size for responsiveness */
     text-align: center;
     font-weight: 700;
     color: #172E5A;
 }
-.popup-container li{
-    font-size: 20px;
+
+.popup-container li {
+    font-size: 16px; /* Adjusted font size for responsiveness */
     text-align: left;
     font-weight: 500;
     color: black;
-    line-height: 30px;
+    line-height: 24px; /* Adjusted line height for responsiveness */
 }
 
-/* Styles for the overlay background */
 .overlay {
     display: none;
     position: fixed;
@@ -569,20 +609,34 @@ align-items: center;
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
- .btns {
+
+.btns {
     background: hsl(0, 0%, 100%);
-    padding: 16px 40px;
-    border-radius: 2;
+    padding: 12px 20px; /* Adjusted padding for responsiveness */
+    border-radius: 2px; /* Corrected syntax for border-radius */
     color: hsl(0, 0%, 17%);
     font-weight: 600;
     border: #00a9b3 solid 2px;
-    margin-left: 40%;
+    margin-left: 10%; /* Adjusted margin for responsiveness */
 }
 
 .btns:hover {
-    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    background: linear-gradient(#00d0ff, #25ffbf); /* Corrected syntax for linear gradient */
     color: hsl(0, 0%, 0%);
 }
+
+/* Media Query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
+    .popup-container {
+        width: 80%; /* Adjusted width for small screens */
+    }
+
+    .btns {
+        margin-left: 0; /* Remove margin for small screens */
+        width: 100%; /* Make the button full width on small screens */
+    }
+}
+
 /*------------------------------------------------------------
 ### lineup-artists-wrap
 ------------------------------------------------------------*/
