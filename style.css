@@ -73,6 +73,7 @@ body {
 .header-bar .site-branding a {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
+    font-size: 18px;
 }
 
 /*------------------------------------------------------------
@@ -187,7 +188,7 @@ body {
 }
 
 .site-navigation ul li a:hover{
-    color: #00d0ff;
+    color: black;
 }
 
 @media screen and (min-width: 992px) {
@@ -247,63 +248,50 @@ body {
 }
 
 .hero-content .entry-header h2 {
-    padding: 30px;
+    padding: 1vw; /* Adjusted padding for responsiveness */
     margin: 0;
     font-family: mountains;
-    font-size:80px;
+    font-size: 5vw; /* Adjusted font size for responsiveness */
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.hero-content .entry-header .entry-meta-date {
-    position: absolute;
-    width: 100%;
-    top: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: hsl(0, 0%, 90%);
-    text-align: center;
+.hero-content .entry-header img{
+align-items: center;
+        max-width: 25%;
+        height: auto;
+        padding: 0;
 }
 
-@media screen and (min-width: 992px) {
+.hero-content .entry-header h1 {
+    margin: 0;
+    text-align: center; 
+    padding: 0; 
+    font-size: 30px; 
+    line-height: 1.5;
+}
+.hero-content .entry-header h3 {
+   
+    text-align: center; 
+    font-family: 'poppins', sans-serif; 
+    font-size: 36px; 
+    padding: 0; 
+    color: #FFBF00;
+}
+/* Media Query for screens smaller than 768px (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
     .hero-content .entry-header h2 {
-        font-size: 70px;
+        font-size: 60px; /* Adjusted font size for smaller screens */
     }
-
-    .hero-content .entry-header .entry-meta-date {
-        top: 50px;
+    .hero-content .entry-header h1 {
+        font-size: 25px; /* Adjusted font size for smaller screens */
     }
-}
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 18px;
-    }
-
-    h3 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .countdown {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .countdown-holder {
-        margin: 10px 0;
-    }
-
-    .countdown-holder div,
-    .countdown-holder label {
-        font-size: 20px;
+    .hero-content .entry-header h3 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
     }
 }
+
 
 
 .serviceBox {
@@ -314,12 +302,10 @@ body {
     box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease 0s;
     background-color: white;
-    height: auto; /* Change height to auto to allow flexible height */
+    height: 400px; /* Change height to auto to allow flexible height */
     margin-top: 20px;
 }
-.serviceBox > * {
-    margin: 0 auto;
-}
+
 
 
 .serviceBox:hover{ background: #FB374D; }
@@ -363,25 +349,12 @@ body {
     color: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
 .serviceBox.cyan:hover{ background: #36ADB3; }
-.serviceBox.blue .service-icon,
-.serviceBox.blue .read-more{
-    color: #172E5A;
-}
-.serviceBox.blue:hover{ background: #172E5A; }
-.serviceBox.orange .service-icon,
-.serviceBox.orange .read-more{
-    color: #F05D0D;
-}
-.serviceBox.orange:hover{ background: #F05D0D; }
-.serviceBox:hover .service-icon,
-.serviceBox:hover .title,
-.serviceBox:hover .read-more{
-    color: #fff;
-}
+
+
 .serviceBox:hover .description{ color: rgba(255,255,255,0.8); }
 @media only screen and (max-width: 990px) {
     .serviceBox {
-        margin: 0 0 20px 0;
+        margin: 0 0 30px 0;
     }
 }
 
@@ -392,12 +365,12 @@ body {
 ## countdown
 ------------------------------------------------------------*/
 .countdown {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .countdown-holder {
     min-width: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .countdown-holder .dday,
@@ -405,17 +378,19 @@ body {
 .countdown-holder .dmin,
 .countdown-holder .dsec {
     display: block;
-    font-size: 80px; /* Adjust font size for smaller screens */
+    font-size: 65px;
     font-weight: 600;
     line-height: 1;
     color: hsl(0, 0%, 100%);
+    text-align:center;
 }
 
 .countdown-holder label {
     display: block;
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 18px;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
+    text-align: center;
 }
 
 /* Styles for hero-content entry-footer */
@@ -471,33 +446,10 @@ body {
     background-size: cover;
 }
 
-.hero-content .entry-header h2 {
-    font-size: 60px; /* Adjusted font size for smaller screens */
-    padding: 20px; /* Adjusted padding for smaller screens */
-}
 
-.hero-content .entry-header .entry-meta-date {
-    top: 20px;
-    font-size: 18px; /* Adjusted font size for smaller screens */
-}
 
-@media screen and (min-width: 992px) {
-    .hero-content .entry-header h2 {
-        font-size: 70px;
-    }
 
-    .hero-content .entry-header .entry-meta-date {
-        top: 50px;
-    }
-}
 
-/* Responsive adjustments for countdown on screens with a maximum width of 768px */
-@media only screen and (max-width: 768px) {
-    .countdown-holder div,
-    .countdown-holder label {
-        font-size: 18px; /* Adjusted font size for smaller screens */
-    }
-}
 
 /* Styles for entry-footer */
 .hero-content .entry-footer {
