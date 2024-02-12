@@ -565,6 +565,10 @@ body {
     }
 }
 
+ .site-header .site-navigation .Register li  a:hover{
+    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    color: hsl(0, 0%, 0%);
+}
 
 /*------------------------------------------------------------
 ## hero-content entry-footer
@@ -595,6 +599,7 @@ body {
 .entry-btn a:hover,.entry-btn .current {
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
+    
 }
 
 
@@ -1346,21 +1351,21 @@ body {
 ## Page Header
 ------------------------------------------------------------*/
 .page-header {
-    min-height: 520px;
-    padding-top: 280px;
-    background-size: cover;
+    min-height: 20px;
+    padding-top: 100px;
+    background-color: #172E5A;
 }
 
 .about-us .page-header {
-    background: url("images/about-us-header-background.jpg") no-repeat;
-    background-size: cover;
+   
 }
 
 .page-header .entry-title {
-    font-size: 72px;
+    font-size: 80px;
     color: white;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .page-header .breadcrumbs {
@@ -1971,14 +1976,14 @@ body {
 # contact-page
 ------------------------------------------------------------*/
 .contact-page {
-    background: url("images/contact-background-image.jpg") no-repeat;
+    background-color: #172E5A;
 }
 
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url("images/contact-header-background.jpg") no-repeat;
+    background-color: #172E5A;
 }
 
 .contact-page .main-content {
