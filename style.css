@@ -1263,12 +1263,10 @@ body {
 }
 
 .footer-content-wrapper .entry-title a {
-    font-size: 45px;
-    font-weight: 700;
-    color: hsl(0, 0%, 100%);
-    line-height: 2;
-    text-decoration: none;
+    padding: 1vw; /* Adjusted padding for responsiveness */
+    margin: 0;
     font-family: mountains;
+    font-size: 12vw; /* Adjusted font size for responsiveness */
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
