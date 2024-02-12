@@ -377,26 +377,38 @@ body {
 
 .hero-content .entry-header img {
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    max-width: 30%; /* Make the image responsive by setting its maximum width to 100% */
+    margin-left: 90px; /* Center the image horizontally */
+    max-width: 78%; /* Make the image responsive by setting its maximum width to 100% */
     height: auto;
     padding: 0;
+    margin-top: 5px;
+}
+
+.hero-content .entry-header .image{
+    max-width:12%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-content .entry-header h1 {
-    margin: 0;
+    margin-top: 10px;
     text-align: center; 
     padding: 0; 
-    font-size: 30px; 
-    line-height: 1.5;
+    font-size: 32px; 
+    line-height: 1.7;
+    margin-right: 120px;
 }
 .hero-content .entry-header h3 {
-   
+   margin-top: 10px;
     text-align: center; 
     font-family: 'poppins', sans-serif; 
     font-size: 36px; 
     padding: 0; 
     color: #FFBF00;
+}
+.hero-content .entry-header h4{
+    font-size: 18px;
+    color: bisque;
 }
 /* Media Query for screens smaller than 768px (adjust the breakpoint as needed) */
 @media screen and (max-width: 768px) {
@@ -404,15 +416,28 @@ body {
         font-size: 60px; /* Adjusted font size for smaller screens */
     }
     .hero-content .entry-header h1 {
-        font-size: 25px; /* Adjusted font size for smaller screens */
+        font-size: 20px; 
+        text-align: center;
+        margin: 0;
+        margin-top: 15px;/* Adjusted font size for smaller screens */
     }
     .hero-content .entry-header h3 {
         font-size: 30px; /* Adjusted font size for smaller screens */
     }
+    .hero-content .entry-header h4 {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+    }
 }
 @media screen and (max-width: 768px) {
     .hero-content .entry-header img {
-        max-width: 100%; /* Adjusted maximum width for smaller screens */
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto; /* Adjusted maximum width for smaller screens */
+    }
+    .hero-content .entry-header .image {
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto; /* Adjusted maximum width for smaller screens */
     }
 }
 
@@ -477,7 +502,9 @@ body {
 .serviceBox:hover .description{ color: rgba(255,255,255,0.8); }
 @media only screen and (max-width: 990px) {
     .serviceBox {
-        margin: 0 0 30px 0;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -629,7 +656,7 @@ body {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
+   
     width: 100%;
     padding-bottom: 120px;
     background: url("images/middle-cover.jpg") no-repeat;
@@ -1182,8 +1209,7 @@ body {
 .site-footer {
     position: relative;
     padding: 40px 0 30px;
-    background: url(images/footer-cover.jpg) no-repeat;
-    background-size: cover;
+    background-color: #172E5A;
 }
 
 .site-footer::before {
@@ -1198,12 +1224,12 @@ body {
 }
 
 .site-footer .footer-cover-title {
-    min-height: 480px;
+    min-height:600px;
     width: 100%;
 }
 
 .site-footer .footer-cover-title h2 {
-    font-size: 20vw;
+    font-size: 17vw;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
@@ -1221,7 +1247,7 @@ body {
     width: 100%;
     height: auto;
     z-index: 4;
-    top: 130px;
+    top: 50px;
     left: 0;
     padding: 6px 0;
     text-align: center;
@@ -1232,21 +1258,26 @@ body {
 }
 
 .footer-content-wrapper .entry-title {
-    text-align: center;
-    margin-top: 25px;
+    text-align:center
+   
 }
 
 .footer-content-wrapper .entry-title a {
-    font-size: 52px;
+    font-size: 45px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     line-height: 1;
     text-decoration: none;
+    font-family: mountains;
+    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     .footer-content-wrapper .entry-title a {
-        font-size: 100px;
+        font-size: 30px;    
     }
 }
 
@@ -1260,6 +1291,7 @@ body {
 .footer-content-wrapper .entry-mail a {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
+    
 }
 
 .footer-content-wrapper .copyright-info {
