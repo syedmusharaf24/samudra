@@ -1335,6 +1335,25 @@ body {
     font-size: 12px;
     color: hsl(0, 0%, 100%);
 }
+.entry-mail .footer-social {
+    margin-top: 15px;
+}
+
+.entry-mail .footer-social .flex {
+    flex-direction: row !important;
+}
+
+.entry-mail .footer-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.entry-mail .footer-social ul a {
+    padding: 5px 16px;
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+}
 
 /*------------------------------------------------------------
 # about-us
@@ -1374,7 +1393,7 @@ body {
 }
 
 .page-header .entry-title {
-    font-size: 80px;
+    font-size: 50px;
     color: white;
     margin: 0;
     padding: 0;
@@ -1415,8 +1434,15 @@ body {
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+    .page-header .entry-header .entry-title h2 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+    }
+}
 .main-content {
     margin: 120px 0;
+    padding-bottom: 40px;
+    margin-top:30px;
 }
 
 .main-content .entry-header .entry-title p {
