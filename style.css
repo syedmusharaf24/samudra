@@ -1355,6 +1355,19 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
+    @media only screen and (max-width: 768px) {
+        .brochure img {
+            height:50%;
+            max-width: 100%;
+        }
+    }
+    
+    /* Additional media queries for larger screens if needed */
+    @media only screen and (min-width: 1200px) {
+        .brochure img {
+            max-width: 100%;
+        }
+    }
 /*------------------------------------------------------------
 # about-us
 ------------------------------------------------------------*/
